@@ -62,3 +62,5 @@ document.getElementById('dayTheme').onclick=()=>setTheme('day');document.getElem
 document.querySelectorAll('[data-ref]').forEach(b=>b.onclick=()=>{view('reference');setTimeout(()=>document.getElementById(b.dataset.ref).scrollIntoView({behavior:'smooth',block:'start'}),20)});document.querySelectorAll('[data-viewquick]').forEach(b=>b.onclick=()=>view(b.dataset.viewquick));document.getElementById('backHome').onclick=()=>{document.body.classList.remove('subview');scrollTo(0,0)};
 document.getElementById('openScratch').onclick=()=>{location.href='scratchpad.html'};if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
+
+
